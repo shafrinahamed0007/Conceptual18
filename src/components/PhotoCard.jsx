@@ -36,7 +36,7 @@ const PhotoCard = ({ photo }) => {
         </div>
       </div>
 
-      <Button variant="outline" className={"w-ful"}>
+      <Button variant="outline" className={"w-full"}>
         View
       </Button>
     </Card>

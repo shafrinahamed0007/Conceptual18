@@ -1,3 +1,4 @@
+// import BottomPhotosCard from "./BottomPhotosCard";
 import PhotoCard from "./PhotoCard";
 
 const TopGeneration = async () => {
@@ -5,6 +6,7 @@ const TopGeneration = async () => {
     (res) => res.json(),
   );
   const topPhotos = photos.slice(0, 8);
+  // const bottomPhotos = photos.slice(9, 14);
   console.log(topPhotos);
   return (
     <div className="mt-10">
@@ -14,6 +16,11 @@ const TopGeneration = async () => {
           <PhotoCard key={photo.id} photo={photo} />
         ))}
       </div>
+      {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-5">
+        {bottomPhotos.map((photos) => (
+          <BottomPhotosCard key={photos?.id} photos={photos} />
+        ))}
+      </div> */}
     </div>
   );
 };
