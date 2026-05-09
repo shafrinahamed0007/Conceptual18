@@ -15,14 +15,14 @@ const PhotoDetails = async ({ params }) => {
 
   return (
     <div>
-      <Card className="border w-[50%]">
+      <Card className="border w-[50%] ">
         <div className="relative w-full">
           <Image
-            className="container mx-auto"
+            className="container mx-auto "
             src={detail?.imageUrl}
             alt={detail?.title}
             height={200}
-            width={400}
+            width={200}
           />
           <Chip className="right-2 top-2 absolute">{detail?.category}</Chip>
         </div>
@@ -30,8 +30,7 @@ const PhotoDetails = async ({ params }) => {
         <div className="flex justify-between">
           <div className="text-xl font-bold">{detail?.title}</div>
           <div>
-          
-             {detail?.createdAt
+            {detail?.createdAt
               ? new Date(detail.createdAt).toLocaleDateString("en-GB")
               : "N/A"}
           </div>
