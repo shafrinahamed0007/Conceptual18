@@ -23,7 +23,7 @@ const Banner = () => {
 
             <Link href="/pricing">
               <Button variant="outline" className="text-white">
-                View Pricing
+                View Pricing...
               </Button>
             </Link>
           </div>
